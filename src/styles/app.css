@@ -1,0 +1,317 @@
+@import 'veriables.css';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html {
+    overflow-x: hidden; 
+}
+body {
+    background-color: var(--body-light-bg);
+    font-family: var(--body-font);
+}
+a {
+    text-decoration: none;
+}
+#wrapper {
+    display: flex;
+    flex: 1;
+}
+.navbar {
+    height: 100%;
+    margin-right: 16rem;
+    transition: margin .25s ease-out;
+}
+.navbar .sidebar {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    max-width: 16rem;
+    background-color: var(--dark);
+}
+.navbar .sidebar .sidebar-title {
+    padding: 1rem;
+}.navbar .sidebar .sidebar-title {
+    padding: 1rem;
+}
+.navbar .sidebar .sidebar-title a {
+    color: var(--white);
+}
+.navbar .sidebar .sidebar-item  {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar .sidebar .sidebar-item a {
+    display: flex;
+    align-items: center;
+    color: var(--nb-primary);
+    flex: 1;
+    padding: 1rem;
+    transition: all .5s;
+}
+.navbar .sidebar .sidebar-item a:hover {
+    color: var(--white);
+}
+.sidebar-heading {
+    color: var(--nb-secondary);
+    font-weight: bold;
+    font-size: small;
+    padding: 1.5rem 1rem;
+}
+#page-content {
+    width: 100%;
+}
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--white);
+}
+.search  {
+    flex: 1;
+}
+.search input{
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #ced4da;
+    margin-left: 1rem;
+}
+.bildirim {
+    background-color: var(--light);
+    border-radius: 50%;
+    padding: .8rem;
+    display: flex;
+    margin-right: 1rem;
+}
+.bildirim svg {
+    color: var(--secondary);
+}
+.profil {
+    width: 50px;
+}
+.profil img {
+    width: 100%;
+    border-radius: 25%;
+}
+.avatar-indicators {
+    position: relative;
+}
+
+.avatar-indicators:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    width: .7rem;
+    height: .7rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    display: table;
+}
+.avatar-offline:before {
+    background-color: var(--gray);
+}
+.avatar-online:before {
+    background-color: var(--success);
+}
+.avatar-away:before {
+    background-color: var(--warning);
+}
+.avatar-busy:before {
+    background-color: var(--danger);
+}
+.avatar-info:before {
+    background-color: var(--info);
+}
+.bg-primary {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    background-color: var(--primary);
+}
+.container-fluid {
+    flex: 1;
+    padding: 1rem;
+}
+.container-fluid .title {
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+.container-fluid .title h2{
+    font-size: 2rem;
+    color: var(--white);
+    flex: 1;
+}
+.container-fluid .title button {
+    background-color: var(--white);
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem; 
+}
+
+.carts-container {
+    display: flex;
+    flex: 1;
+    width: 100%;;
+    flex-wrap: wrap;
+    margin-top: -5rem;
+    justify-content: space-between;
+}
+.carts-container .cart {
+    background-color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    flex: 1;
+    margin: 1rem;
+}
+.carts-container .cart .cart-title {
+    padding: 1rem 0;
+}
+.cart-number {
+    font-size: 2rem;
+}
+.cart-complated {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: var(--secondary);
+}
+.cart-complated b {
+    color: var(--dark);
+}
+.table-container {
+    display: flex;
+    flex-direction: column;
+    overflow: auto!important;
+    margin: 1rem;
+    background-color: var(--white);
+    box-shadow: 0 2px 4px rgb(0 0 20 / 8%), 0 1px 2px rgb(0 0 20 / 8%);
+    border-radius: .5rem;
+}
+.table-container .table-header h4 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .9rem 1.5rem;
+}
+.table-container table {
+    flex: 1;
+    border-collapse: collapse;
+}
+
+.table-container table thead tr{
+    background-color: var(--light);
+}
+.table-container table thead tr th {
+    color: var(--secondary);
+    text-transform: uppercase;
+    text-align: left;
+    font-size: .8rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    padding-left: 1rem;
+    letter-spacing: .05em;
+}
+.table-container table tbody tr td .td-container {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+.table-container table tbody tr td .td-svg {
+    border: 1px solid #dee2e6;
+    padding: .5rem;
+    margin-right: 1rem;
+}
+.avatar-group {
+    display: flex;
+    align-items: center;
+}
+.avatar-group .avatar {
+    margin-left: -.4rem;
+}
+.avatar-group .avatar img{
+    width: 30px;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.avatar-group .avatar-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .3rem;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+.notifications {
+    position: relative;
+}
+.notifications .dropdown-bildirim {
+    position: absolute;
+    left: -25rem;
+    display: none;
+}
+.notifications:hover .dropdown-bildirim {
+    display: block;
+}
+
+.dropdown  {
+    display: flex;
+    background-color: var(--white);
+    z-index: 1;
+    box-shadow: 0 2px 4px rgb(0 0 20 / 8%), 0 1px 2px rgb(0 0 20 / 8%);
+    border-radius: .5rem;
+}
+.dropdown ul {
+    list-style: none;
+}
+.dropdown ul li a {
+    color: var(--dark);
+}
+.dropdown .dropdown-header {
+    padding: 1rem;
+    display: flex;
+    border-radius: .5rem .5rem 0 0;
+    border-bottom: 1px solid #dee2e6;
+}
+.dropdown .dropdown-header h3{
+    flex: 1;
+}
+
+.dropdown ul li {
+    display: flex;
+}
+.dropdown ul li a {
+    border-bottom: 1px solid #dee2e6;
+    padding: 1rem;
+}
+/* MEDİA */
+@media (max-width: 768px) {
+    .search {
+        display: none;
+    }
+    .menu  {
+        flex: 1;
+    }
+}
+@media (max-width: 560px) {
+    .notifications .dropdown-bildirim {
+        left: -10rem;
+    }
+}
+
+
